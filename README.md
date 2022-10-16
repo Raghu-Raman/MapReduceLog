@@ -12,4 +12,4 @@ MapReduce enables parallel processing of data. The distributed computing model e
 #### Mappers
 The mappers are the first stage of the architechture. The mappers take in a set of key value parts and process them to form a map of key value pairs. The output of the mapper will be pipelined to the reducer. The key value pairs produced by mappers are intermediate key value pairs. If more than one mapper is pipelined to a single reducer, a combiner will come into play.
 
-![MapReduce Architecture](https://www.geeksforgeeks.org/mapreduce-architecture/)
+![MapReduce Architecture]([https://www.geeksforgeeks.org/mapreduce-architecture/](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200908123810/MapReduce-Architecture.jpg))
