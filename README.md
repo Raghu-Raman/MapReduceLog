@@ -45,4 +45,11 @@ The mapper will process the input to identify the messages with injected string 
 
 #### Mapper3 class - Reducer3 class
 The mapper will count the length of all the string pattern for each log message and create set of key value pairs. The reducer will reduce the values to obtain the maximum length.
-Z
+
+## Environmental variables
+- Java - 11
+- SBT - 1.7
+- Scala - 3.0.1
+ #### Sbt plug-ins
+ The dependencies required to run the program are given in the ```build.sbt``` file. Setup hadoop locally following the steps given in (Hadoop Installation For Mac OS) [https://codewitharjun.medium.com/install-hadoop-on-macos-m1-m2-6f6a01820cc9]
+ 
