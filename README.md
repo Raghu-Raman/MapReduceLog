@@ -61,3 +61,10 @@ The mapper will count the length of all the string pattern for each log message 
 Clone the repository and set it up locally. Setup the account in Amazon Web Services [AWS](https://aws.amazon.com). The activation may take upto 24 hours for it to come online. Be early with your registration.
 The project will be using the Amazon Elastic Map Reduce to perform the parallel processing of the data. Create a S3 bucket for your project. The S3 project will provide the necessary place holder for the input data and the jar file.
 The scala main class along with the modules can be converted into the jar file by performing ``` sbt clean compile assembly```. The resulting jar file can be found in the ```target/scala-3.0.1 ``` folder. 
+#### AWS- Execution
+Upload the files into the S3 bucket. Follow the steps to setup the cluster in the AWS EMR.
+- Click on ```Create Cluster``` to create an EMR cluster to run the project. 
+- Click on ``` Go to advanced options``` to setup the environment for your cluster.
+- Under Steps , select ``` Custom JAR ``` and select the Jar location
+- Given the bucket address for input and output folders respectively.
+
