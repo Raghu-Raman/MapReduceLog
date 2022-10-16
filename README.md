@@ -103,3 +103,8 @@ Output for the job 3
 
 Output for the job 4.
 
+#### Test Output
+
+The test cases have been written under the folder ```test\scala\testAllMappers.scala```. The test program will contain all the algorithms implemented for each mapper and reducer. The application.conf will provide the same input parameters. Giving custom input tests the working of the algorithm.
+
+<img width="707" alt="Testoutput" src="https://user-images.githubusercontent.com/78893470/196046899-7162b1f9-c2f8-4756-9299-c32f55e747ff.png">
