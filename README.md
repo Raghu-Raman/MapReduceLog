@@ -87,10 +87,9 @@ Output for job 1
 ###### Output for error message distribution for a given time interval
 <img width="380" alt="Screen Shot 2022-10-16 at 11 03 35 AM" src="https://user-images.githubusercontent.com/78893470/196045685-a7254750-169f-42e4-a67c-88156d427d38.png">
 
-Intermediate result
 <img width="380" alt="Job-2" src="https://user-images.githubusercontent.com/78893470/196045632-de231bbf-819e-4efe-a437-ea79335e445a.png">
 
-Output for job 2
+Intermediate result along with output for job 2 
 
 #### Job 3
 ###### Output for total distribution
