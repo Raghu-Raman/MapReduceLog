@@ -30,4 +30,4 @@ The job-3 deals with to calculate the total number of occurrences for each log m
 #### Job 4
 The job-4 deals with obtaining the length of the longest string for a given log message with injected string pattern.
 ## Implementaion
-Create the main class with all the job configurations with. Each job configuration is given with a specific task. The task will define the behaviour of the mappers and reducers in the job. The ''' application.conf ''' will contain all the input parameters and all the necessary input configurations for all the jobs. 
+Create the main class with all the job configurations with. Each job configuration is given with a specific task. The task will define the behaviour of the mappers and reducers in the job. The ``` application.conf ``` will contain all the input parameters and all the necessary input configurations for all the jobs. 
