@@ -24,8 +24,10 @@ The job-1 deals with processing the input file and calculate the number of occur
   - DEBUG
   - ERROR
 #### Job 2
-The job-2 deals with obtaining the number of occurrences of 'ERROR' log message with injected string pattern for a given time interval ,and the time intervals has to be sorted in descending order.
+The job-2 deals with obtaining the number of occurrences of 'ERROR' log message with injected string pattern for a given time interval,and the time intervals has to be sorted in descending order.
 #### Job 3
 The job-3 deals with to calculate the total number of occurrences for each log message type.
 #### Job 4
 The job-4 deals with obtaining the length of the longest string for a given log message with injected string pattern.
+## Implementaion
+Create the main class with all the job configurations with. Each job configuration is given with a specific task. The task will define the behaviour of the mappers and reducers in the job. The ''' application.conf ''' will contain all the input parameters and all the necessary input configurations for all the jobs. 
