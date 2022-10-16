@@ -77,8 +77,8 @@ The cluster will be running the map reduce program and produce the output in the
 - Click on the main class ```runMapReduce``` as the exectuable main class.
 - Click run.
 ## Output
-## Job 1
-#### Output for a given time interval
+#### Job 1
+###### Output for a given time interval
 <img width="380" alt="Job-1" src="https://user-images.githubusercontent.com/78893470/196045275-5a974768-a3da-485e-b7cf-60347991883e.png">
 The output for the job 1.
 ## Job 2
@@ -86,11 +86,11 @@ The output for the job 1.
 The output for the job 2.
 ![Intermediate Result]<img width="380" alt="Screen Shot 2022-10-16 at 11 03 35 AM" src="https://user-images.githubusercontent.com/78893470/196045685-a7254750-169f-42e4-a67c-88156d427d38.png">
 <img width="380" alt="Job-2" src="https://user-images.githubusercontent.com/78893470/196045632-de231bbf-819e-4efe-a437-ea79335e445a.png">
-## Job 3
-#### Output for total distribution
+#### Job 3
+###### Output for total distribution
 The output for the job 3.
 <img width="250" alt="Screen Shot 2022-10-16 at 1 05 16 AM" src="https://user-images.githubusercontent.com/78893470/196045756-450de494-7ca1-433d-97de-c040911547c6.png">
-## Job 4
-#### Output for error message distribution for a given time interval
+#### Job 4
+###### Output for error message distribution for a given time interval
 The output for the job 4.
 <img width="300" alt="Job-4" src="https://user-images.githubusercontent.com/78893470/196045804-546b49ab-4487-4953-8121-1d45e585db3f.png">
