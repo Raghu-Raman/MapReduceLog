@@ -81,10 +81,10 @@ The cluster will be running the map reduce program and produce the output in the
 ###### Output for a given time interval
 <img width="380" alt="Job-1" src="https://user-images.githubusercontent.com/78893470/196045275-5a974768-a3da-485e-b7cf-60347991883e.png">
 The output for the job 1.
-## Job 2
-#### Output for error message distribution for a given time interval
+#### Job 2
+###### Output for error message distribution for a given time interval
 The output for the job 2.
-![Intermediate Result]<img width="380" alt="Screen Shot 2022-10-16 at 11 03 35 AM" src="https://user-images.githubusercontent.com/78893470/196045685-a7254750-169f-42e4-a67c-88156d427d38.png">
+<img width="380" alt="Screen Shot 2022-10-16 at 11 03 35 AM" src="https://user-images.githubusercontent.com/78893470/196045685-a7254750-169f-42e4-a67c-88156d427d38.png">
 <img width="380" alt="Job-2" src="https://user-images.githubusercontent.com/78893470/196045632-de231bbf-819e-4efe-a437-ea79335e445a.png">
 #### Job 3
 ###### Output for total distribution
