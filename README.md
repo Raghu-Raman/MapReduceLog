@@ -111,3 +111,13 @@ The test cases have been written under the folder ```test\scala\testAllMappers.s
 
 ## Youtube Link
 The implementation and the explanation for it is given in this [link](https://youtu.be/Cnza3ZGyISU).
+
+## How to Clone?
+- Open Intellij in your console.
+- Under New Projects, select ```Get from VCS```. 
+- Paste the Github Link and clone.
+- Let the environment and packages unfold and sbt synchronize.
+- Under the run settings select runMapReduce as the running function.
+- Make sure JDK 11 is installed in your system.
+- For the program arguments, select the path where the log is file is present in your console and select resources/output folder the src folder .
+- Run the program
