@@ -120,4 +120,5 @@ The implementation and the explanation for it is given in this [link](https://yo
 - Under the run settings select runMapReduce as the running function.
 - Make sure JDK 11 is installed in your system.
 - For the program arguments, select the path where the log is file is present in your console and select resources/output folder the src folder .
-- Run the program
+- Run the program.
+- Also change the input path given in the applications.conf file and the pre-meditated output path from the Job-2.
