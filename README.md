@@ -67,4 +67,5 @@ Upload the files into the S3 bucket. Follow the steps to setup the cluster in th
 - Click on ``` Go to advanced options``` to setup the environment for your cluster.
 - Under Steps , select ``` Custom JAR ``` and select the Jar location
 - Given the bucket address for input and output folders respectively.
-
+- Click on ``` Next ``` till you reach ```Create Cluster ``` option.
+The cluster will be running the map reduce program and produce the output in the mentioned output folder.
