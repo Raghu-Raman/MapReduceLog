@@ -95,5 +95,5 @@ The output for the job 3.
 
 #### Job 4
 ###### Output for error message distribution for a given time interval
-The output for the job 4.
+![The output for the job 4]
 <img width="300" alt="Job-4" src="https://user-images.githubusercontent.com/78893470/196045804-546b49ab-4487-4953-8121-1d45e585db3f.png">
