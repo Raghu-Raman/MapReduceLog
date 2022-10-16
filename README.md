@@ -30,4 +30,19 @@ The job-3 deals with to calculate the total number of occurrences for each log m
 #### Job 4
 The job-4 deals with obtaining the length of the longest string for a given log message with injected string pattern.
 ## Implementaion
-Create the main class with all the job configurations with. Each job configuration is given with a specific task. The task will define the behaviour of the mappers and reducers in the job. The ``` application.conf ``` will contain all the input parameters and all the necessary input configurations for all the jobs. 
+Create the main class with all the job configurations with. Each job configuration is given with a specific task. The task will define the behaviour of the mappers and reducers in the job. The ``` application.conf ``` will contain all the input parameters and all the necessary input configurations for all the jobs. The ``` logback.xml``` file will help us logging the details of the programs. 
+#### Mapper class - Reducer class
+This will give us the distribution of the injected patterns for each log message.
+
+#### Mapper1 class - Reducer1 class
+This will give us the distribution of the injected patterns for ``` ERROR``` log message for a pre-defined time interval. This will be part 1 of the job-2
+
+#### Mapper4 class - Reducer4 class
+This will give us sorting of the output from the ``` Reducer1``` class. Thus completing the second part of the job-2.
+
+#### Mapper2 class - Reducer2 class
+The mapper will process the input to identify the messages with injected string pattern and add 1 as a value for it. The reducer will give the total sum of all the injected string pattern for all log messages.
+
+#### Mapper3 class - Reducer3 class
+The mapper will count the length of all the string pattern for each log message and create set of key value pairs. The reducer will reduce the values to obtain the maximum length.
+Z
