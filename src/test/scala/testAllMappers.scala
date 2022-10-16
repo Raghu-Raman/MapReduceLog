@@ -13,13 +13,13 @@ import org.joda.time.LocalTime
 object testAllMappers:
   def main(args: Array[String]): Unit = {
   // The first test case will test all the success cases with string containing one log message of each type with time limit falling between the given interval
-  val testPattern1 ="14:27:31.351 [scala-execution-context-global-14] INFO  HelperUtils.Parameters$ - #$%))ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3(-+]\n14:28:22.508 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - {@%^))ae1D6ibf1ce1ce3ag2D8rK9lL8maf1K8kK9u(:\n14:29:27.815 [scala-execution-context-global-14] DEBUG HelperUtils.Parameters$ - %%((^$J9mY9uag1bf2P5fP8uC8qC5mZ9tbe1R8r_+=\n14:31:04.264 [scala-execution-context-global-14] WARN  HelperUtils.Parameters$ - ~?}{|bg0cg3ce1H7wbf1ag2af3ce2zxmp\n"
-  // The second test case will fail with all the log message being out of the given time interval . NOTE: The message is same as testPattern1 with hour value changed from 14 to 09
-  val testPattern2 = "09:27:31.351 [scala-execution-context-global-14] INFO  HelperUtils.Parameters$ - #$%))ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3(-+]\n09:28:22.508 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - {@%^))ae1D6ibf1ce1ce3ag2D8rK9lL8maf1K8kK9u(:\n09:29:27.815 [scala-execution-context-global-14] DEBUG HelperUtils.Parameters$ - %%((^$J9mY9uag1bf2P5fP8uC8qC5mZ9tbe1R8r_+=\n09:31:04.264 [scala-execution-context-global-14] WARN  HelperUtils.Parameters$ - ~?}{|bg0cg3ce1H7wbf1ag2af3ce2zxmp\n"
+  val testPattern1 ="14:27:21.351 [scala-execution-context-global-14] INFO  HelperUtils.Parameters$ - #$%))ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3(-+]\n14:28:22.508 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - {@%^))ae1D6ibf1ce1ce3ag2D8rK9lL8maf1K8kK9u(:\n14:29:27.815 [scala-execution-context-global-14] DEBUG HelperUtils.Parameters$ - %%((^$J9mY9uag1bf2P5fP8uC8qC5mZ9tbe1R8r_+=\n14:21:04.264 [scala-execution-context-global-14] WARN  HelperUtils.Parameters$ - ~?}{|bg0cg3ce1H7wbf1ag2af3ce2zxmp\n"
+  // The second test case will fail with all the log message being out of the given time interval . NOTE: The message is same as testPattern1 with hour value changed from 14 to 11
+  val testPattern2 = "11:27:21.351 [scala-execution-context-global-14] INFO  HelperUtils.Parameters$ - #$%))ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3(-+]\n11:28:22.508 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - {@%^))ae1D6ibf1ce1ce3ag2D8rK9lL8maf1K8kK9u(:\n11:29:27.815 [scala-execution-context-global-14] DEBUG HelperUtils.Parameters$ - %%((^$J9mY9uag1bf2P5fP8uC8qC5mZ9tbe1R8r_+=\n11:21:04.264 [scala-execution-context-global-14] WARN  HelperUtils.Parameters$ - ~?}{|bg0cg3ce1H7wbf1ag2af3ce2zxmp\n"
   // The following test pattern will be a test case for the second job with alternating succcess and failure in single string
-  val testPattern3 = "09:27:31.351 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - #$%))ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3(-+]\n14:28:22.508 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - {@%^))ae1D6ibf1ce1ce3ag2D8rK9lL8maf1K8kK9u(:\n14:29:27.815 [scala-execution-context-global-14] ERROR HelperUtils.Parameters$ - %%((^$J9mY9uag1bf2P5fP8uC8qC5mZ9tbe1R8r_+=\n09:31:04.264 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - ~?}{|bg0cg3ce1H7wbf1ag2af3ce2zxmp\n"
+  val testPattern3 = "11:27:21.351 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - #$%))ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3(-+]\n15:28:22.508 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - {@%^))ae1D6ibf1ce1ce3ag2D8rK9lL8maf1K8kK9u(:\n11:29:27.815 [scala-execution-context-global-14] ERROR HelperUtils.Parameters$ - %%((^$J9mY9uag1bf2P5fP8uC8qC5mZ9tbe1R8r_+=\n15:21:04.264 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - ~?}{|bg0cg3ce1H7wbf1ag2af3ce2zxmp\n"
   // The following will test the total number of log messges with the injected string pattern. It is a combination of testPattern1 and testPattern2
-  val testPattern4 = "14:27:31.351 [scala-execution-context-global-14] INFO  HelperUtils.Parameters$ - #$%))ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3(-+]\n14:28:22.508 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - {@%^))ae1D6ibf1ce1ce3ag2D8rK9lL8maf1K8kK9u(:\n14:29:27.815 [scala-execution-context-global-14] WARN HelperUtils.Parameters$ - %%((^$J9mY9uag1bf2P5fP8uC8qC5mZ9tbe1R8r_+=\n14:31:04.264 [scala-execution-context-global-14] DEBUG  HelperUtils.Parameters$ - ~?}{|bg0cg3ce1H7wbf1ag2af3ce2zxmp\n09:27:31.351 [scala-execution-context-global-14] INFO  HelperUtils.Parameters$ - #$%))ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3(-+]\n09:28:22.508 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - {@%^))ae1D6ibf1ce1ce3ag2D8rK9lL8maf1K8kK9u(:\n09:29:27.815 [scala-execution-context-global-14] DEBUG HelperUtils.Parameters$ - %%((^$J9mY9uag1bf2P5fP8uC8qC5mZ9tbe1R8r_+=\n09:31:04.264 [scala-execution-context-global-14] WARN  HelperUtils.Parameters$ - ~?}{|bg0cg3ce1H7wbf1ag2af3ce2zxmp\n"
+  val testPattern4 = "14:27:21.351 [scala-execution-context-global-14] INFO  HelperUtils.Parameters$ - #$%))ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3(-+]\n14:28:22.508 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - {@%^))ae1D6ibf1ce1ce3ag2D8rK9lL8maf1K8kK9u(:\n14:29:27.815 [scala-execution-context-global-14] WARN HelperUtils.Parameters$ - %%((^$J9mY9uag1bf2P5fP8uC8qC5mZ9tbe1R8r_+=\n14:21:04.264 [scala-execution-context-global-14] DEBUG  HelperUtils.Parameters$ - ~?}{|bg0cg3ce1H7wbf1ag2af3ce2zxmp\n11:27:21.351 [scala-execution-context-global-14] INFO  HelperUtils.Parameters$ - #$%))ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3(-+]\n11:28:22.508 [scala-execution-context-global-14] ERROR  HelperUtils.Parameters$ - {@%^))ae1D6ibf1ce1ce3ag2D8rK9lL8maf1K8kK9u(:\n11:29:27.815 [scala-execution-context-global-14] DEBUG HelperUtils.Parameters$ - %%((^$J9mY9uag1bf2P5fP8uC8qC5mZ9tbe1R8r_+=\n11:21:04.264 [scala-execution-context-global-14] WARN  HelperUtils.Parameters$ - ~?}{|bg0cg3ce1H7wbf1ag2af3ce2zxmp\n"
 
   val configTest = ConfigFactory.load()
   val startTimei = configTest.getString("MR.startTime") // MR represents the config unique to job 1. Start time of the interval is obtained
@@ -42,7 +42,7 @@ object testAllMappers:
 
     if(timeParse.isAfter(startTime)&&timeParse.isBefore(endTime))
     {
-      if(timeValue == "14:27:31"&& patternValue == "ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3" && logValue =="INFO"){
+      if(timeValue == "14:27:21"&& patternValue == "ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3" && logValue =="INFO"){
           infoCount += 1
         }
 
@@ -53,7 +53,7 @@ object testAllMappers:
         debugCount += 1
       }
 
-      if (timeValue == "14:31:04" && patternValue == "bg0cg3ce1H7wbf1ag2af3ce2" && logValue == "WARN") {
+      if (timeValue == "14:21:04" && patternValue == "bg0cg3ce1H7wbf1ag2af3ce2" && logValue == "WARN") {
         warnCount += 1
       }
     }
@@ -75,7 +75,7 @@ object testAllMappers:
       var errorCount: Int = 0
       var debugCount: Int = 0
       if (timeParse.isAfter(startTime) && timeParse.isBefore(endTime)) {
-        if (timeValue == "14:27:31" && patternValue == "ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3" && logValue == "INFO") {
+        if (timeValue == "14:27:21" && patternValue == "ae1ce2cf1C8vbe2af1bf0E5jE9rP9faf1cf2L7fN9fbg3" && logValue == "INFO") {
           infoCount += 1
         }
 
@@ -86,7 +86,7 @@ object testAllMappers:
           debugCount += 1
         }
 
-        if (timeValue == "14:31:04" && patternValue == "bg0cg3ce1H7wbf1ag2af3ce2" && logValue == "WARN") {
+        if (timeValue == "14:21:04" && patternValue == "bg0cg3ce1H7wbf1ag2af3ce2" && logValue == "WARN") {
           warnCount += 1
         }
       }
@@ -98,7 +98,6 @@ object testAllMappers:
     testPattern3.split("\n").foreach { token =>
       val timeValue = timeRegex.findFirstIn(token).get
       val timeParse = LocalTime.parse(timeValue)
-      val patternValue = patternRegex.findFirstIn(token).get
       val errorValue = errorRegex.findFirstIn(token).get
       if (timeParse.isAfter(startTime) && timeParse.isBefore(endTime)) {
         if (timeParse.isAfter(startTime) && timeParse.isBefore(endTime) && errorValue == "ERROR") {
