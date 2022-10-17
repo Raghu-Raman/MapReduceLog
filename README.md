@@ -69,3 +69,56 @@ Upload the files into the S3 bucket. Follow the steps to setup the cluster in th
 - Given the bucket address for input and output folders respectively.
 - Click on ``` Next ``` till you reach ```Create Cluster ``` option.
 The cluster will be running the map reduce program and produce the output in the mentioned output folder.
+
+### Intellij- Execution
+- Clone the project with VCS and load the project structure with a reload in ```build.sbt```.
+- Setup the JDK and Cp module settings for the project.
+- Pass the input and output folder in the program arguments tab.
+- Click on the main class ```runMapReduce``` as the exectuable main class.
+- Click run.
+## Output
+#### Job 1
+###### Output for a given time interval
+<img width="380" alt="Job-1" src="https://user-images.githubusercontent.com/78893470/196045275-5a974768-a3da-485e-b7cf-60347991883e.png">
+
+Output for job 1
+
+#### Job 2
+###### Output for error message distribution for a given time interval
+<img width="380" alt="Screen Shot 2022-10-16 at 11 03 35 AM" src="https://user-images.githubusercontent.com/78893470/196045685-a7254750-169f-42e4-a67c-88156d427d38.png">
+
+<img width="380" alt="Job-2" src="https://user-images.githubusercontent.com/78893470/196045632-de231bbf-819e-4efe-a437-ea79335e445a.png">
+
+Intermediate result along with output for job 2 
+
+#### Job 3
+###### Output for total distribution
+<img width="250" alt="Screen Shot 2022-10-16 at 1 05 16 AM" src="https://user-images.githubusercontent.com/78893470/196045756-450de494-7ca1-433d-97de-c040911547c6.png">
+
+Output for the job 3
+
+#### Job 4
+###### Output for error message distribution for a given time interval
+<img width="300" alt="Job-4" src="https://user-images.githubusercontent.com/78893470/196045804-546b49ab-4487-4953-8121-1d45e585db3f.png">
+
+Output for the job 4.
+
+#### Test Output
+
+The test cases have been written under the folder ```test\scala\testAllMappers.scala```. The test program will contain all the algorithms implemented for each mapper and reducer. The application.conf will provide the same input parameters. Giving custom input tests the working of the algorithm.
+
+<img width="707" alt="Testoutput" src="https://user-images.githubusercontent.com/78893470/196046899-7162b1f9-c2f8-4756-9299-c32f55e747ff.png">
+
+## Youtube Link
+The implementation and the explanation for it is given in this [link](https://youtu.be/Cnza3ZGyISU).
+
+## How to Clone?
+- Open Intellij in your console.
+- Under New Projects, select ```Get from VCS```. 
+- Paste the Github Link and clone.
+- Let the environment and packages unfold and sbt synchronize.
+- Under the run settings select runMapReduce as the running function.
+- Make sure JDK 11 is installed in your system.
+- For the program arguments, select the path where the log is file is present in your console and select resources/output folder the src folder .
+- Run the program.
+- Also change the input path given in the applications.conf file and the pre-meditated output path from the Job-2.
