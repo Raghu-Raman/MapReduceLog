@@ -124,4 +124,4 @@ The implementation and the explanation for it is given in this [link](https://yo
 - Also change the input path given in the applications.conf file and the pre-meditated output path from the Job-2.
 
 ## What to do with input?
- Put the log files into a folder and add the absolute path of that folder as the input.
+ Put the log files into a folder and add the absolute path of that folder as the input. The four files should be in a folder and that must be input for the program.
