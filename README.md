@@ -122,3 +122,6 @@ The implementation and the explanation for it is given in this [link](https://yo
 - For the program arguments, select the path where the log is file is present in your console and select resources/output folder the src folder .
 - Run the program.
 - Also change the input path given in the applications.conf file and the pre-meditated output path from the Job-2.
+
+## What to do with input?
+ Put the log files into a folder and add the absolute path of that folder as the input.
